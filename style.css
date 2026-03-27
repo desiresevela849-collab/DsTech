@@ -6,7 +6,18 @@
 }
 body{
     background: rgba(0, 162, 255, 0.384);
+    display: flex;
+    flex-direction: column;
+    
 }
+html,body{
+    height: 100%;
+
+}
+main{
+    flex: 1;
+}
+
 
 .nav1{
     display: flex;
@@ -177,6 +188,11 @@ body{
     text-align: center;
     font-weight: bold;
 }
+.produit h3{
+    color: #ea4335 ;
+    text-align: center;
+    font-weight: bold;
+}
 
 .conctact{
     text-align: center;
@@ -215,6 +231,7 @@ footer{
     background: rgb(65, 5, 88);
     color: white;
     font-weight: bold;
+
 }
 
 i{
@@ -241,21 +258,134 @@ i:hover{
     color: white;
     transform: scale(1.1);
 }
+.contact1{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact1 h3{
+    color: red;
+    font-weight: bold;
+}
+
+.icon_contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px; 
+        gap: 50px;
+
+}
+.icon_contact i{
+           font-size: 35px;
+           padding: 10px;
+           border-radius: 50%;
+           background: rgb(65, 5, 88);
+           transition: 0.5s;
+        
+}
+
+
+.icon_contact i:hover{
+    background: white;
+}
+
+.icon_contact a{
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color:white;
+    margin: 8px 0;
+}
+.icon_contact a:nth-child(2) i{
+    color: #25d366;
+}
+.icon_contact a:nth-child(1) i{
+    color: #1877f2
+}
+
+.icon_contact a:nth-child(3) i{
+    color: #ea4335
+}.contact1 b{
+    color: red;
+}
+.service1{
+    text-align: center;
+    color: red;
+    padding: 15px;
+}
+.service_liste{
+    text-align: center;
+}
+.service_liste li{
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px;
+    color: rgb(73, 38, 97);
+}
+
+.service_liste p{
+    color: #ea4335;
+    font-weight: bold;
+}
+.button1 button{
+    background:  rgb(73, 38, 97);
+    color: aliceblue;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.button1{
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+}
+
+
+
 
 @media(max-width:768px){
     .nav1{
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 15px;
+        flex-wrap: wrap;
 
     }
+
     .menu{
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
         align-items: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .menu a{
+        font-size: 14px;
+        padding: 5px;
     }
     .service{
-        flex-direction: colum;
+        flex-direction: column;
     }
     .logo{
         flex-direction: column;
     }
+    .logo img{
+        width: 35px;
+        height: 35px;
+    }
+    .logo h1{
+        font-size: 18px;
 
-}
+    }
+
+} 
+
+
