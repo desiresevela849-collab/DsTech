@@ -19,10 +19,10 @@
         </div>
        
         <div class="menu">
-            <a href="#">Accueil <i class="fas fa-home"></i></a>
-           <a href="#">Services <i class="fas fa-cogs"></i></a>
-           <a href="#">Produits <i class="fas fa-box"></i></a>
-           <a href="#">Contact  <i class="fas fa-envelope"></i></a>
+            <a href="index.html">Accueil <i class="fas fa-home"></i></a>
+           <a href="services.html">Services <i class="fas fa-cogs"></i></a>
+           <a href="Produit.html">Produits <i class="fas fa-box"></i></a>
+           <a href="Contact.html">Contact  <i class="fas fa-envelope"></i></a>
         </div>
     </nav>
 
@@ -30,9 +30,10 @@
     <header class="header1">
         <h2>Bienvenue sur mon site</h2>
         <p>Nous créons des sites web modernes</p>
-        <button>Découvrir</button>
+        <a href="services.html"><button>Découvrir</button></a>
     </header>
 
+    <main>
     <!-- SERVICES -->
     <section class="sec1">
         <h1>Nos Services</h1>
@@ -79,13 +80,28 @@
     <section class="conctact">
         <h2>Contact</h2>
 
-        <form>
-            <input type="text" required placeholder="Nom">
-            <input type="email" required placeholder="Email">
-            <textarea required placeholder="Message"></textarea>
+       
+           <form
+  action="https://formspree.io/f/xlgodkbb"
+  method="POST"
+>
+ <input type="hidden" name="_subject" value="Nouveau message depuis DsTech ">
+
+ <input type="text" name="_gotcha" style="display:none">
+
+            <label>
+    email:
+    <input type="email" required name="email">
+  </label>
+            <label>
+    message:
+    <textarea name="message" required></textarea>
+  </label>
             <button type="submit">Envoyer</button>
         </form>
     </section>
+    
+    </main>
 
    <!-- FOOTER -->
    <footer>
