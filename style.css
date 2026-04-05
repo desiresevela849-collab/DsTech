@@ -5,7 +5,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body{
-    background: rgba(0, 162, 255, 0.384);
+    background:lavender;
     display: flex;
     flex-direction: column;
     
@@ -19,12 +19,13 @@ main{
 }
 
 
+
 .nav1{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgb(65, 5, 88);
     padding: 15px 40px;
+    background:rgb(11, 38, 158);
     position: sticky;
     top: 0;
 }
@@ -61,7 +62,7 @@ main{
     gap: 20px;
 }
 .nav1 a{
-    color: rgb(238, 172, 85);
+    color: rgb(247, 244, 241);
     font-weight: bold;
     text-decoration: none;
     padding: 8px 15px;
@@ -80,24 +81,62 @@ main{
    display: flex;
    flex-direction: column;
    align-items: center;
-   background: rgb(65, 5, 88);
+   background:rgb(11, 38, 158);
    padding: 30px;
    border-radius: 15px;
    margin: 50px;
+   text-align: center;
+   
+}
+.header1 ol{
+    list-style: none;
+}
+.header1 ol li{
+            color: rgb(255, 251, 251);
+            font-weight: bold;
+            font-size: 20px;
 }
 
+.header1 i{
+    font-size: 30px;
+}
+#lapt{
+    color: #22c55e;
+}
+.fa-chart-line{
+    color: #e34c26;
+}
+.fa-palette{
+    color: #f0db4f;
+}
+.header1 ol p{
+    color:black;
+}
 
+.header1 img{
+    border-radius: 50%;
+}
+.serv{
+    text-align: center;
+    font-weight: bold;
+    color: rgb(11, 38, 158);
+}
+
+.ap{
+    text-align: center;
+    color:rgb(11, 38, 158);
+    font-weight: bold;
+}
 
 .header1 h2{
     text-align: center;
     font-weight: bold;
-    color: rgb(69, 158, 235);
-    
+    color:white ;    
 }
 .header1 p{
     text-align: center;
     font-weight: bold;
-    color: rgb(69, 158, 235);
+    color: rgb(238, 172, 85);
 }
 .header1 button{
     border-radius:8px;
@@ -116,27 +155,60 @@ main{
     transform: scale(1.1);
 }
 .sec1{
-  background:  rgb(65, 5, 88);
-  padding: 20px;
+  padding: 40px;
   border-radius: 8px;
-  box-shadow: 0 5px 15px black;
   text-align: center;
   margin: 50px;
+  height: 400px;
+  background-image: url(image/moi.png);
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+
+}
+.qui{
+    max-width: 400px;
+    color: white;
+    background: rgba(3, 11, 85, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(
+        to right,rgba(0,0,0,0.7)
+        rgba(0,0,0,0.2)
+    );
 
 }
 .sec1 h1{
-    color:red;
+    color:rgb(136, 131, 131);
     font-weight: bold; 
     font-size: 40px;
    
 }
-.sec1 h3{
-    font-weight: bold;
-    color: #4facfe;
+.b1{
+    color: #ea4335;
+}
+.script{
+    color: rgb(211, 139, 139);
+}
+.sec1 #fa-brain{
+    color: rgb(211, 139, 139);
+    text-align: center;
+    font-size: 35px;
+}
+.logo #lap{
+    color: red;
+}
+.header1 #star{
+    color: red;
 }
 
+
 .sec1 p{
-    color: rgb(253, 197, 197);
+    color: rgb(252, 247, 247);
 }
 
 .service{
@@ -199,7 +271,7 @@ main{
     margin: 50px;
 }
 .conctact h2{
-    color: rgb(250, 1, 1);
+    color: rgb(11, 38, 158);
     font-weight: bold;
     padding: 10px;
 }
@@ -228,9 +300,10 @@ form button{
 footer{
     text-align: center;
     padding: 20px;
-    background: rgb(65, 5, 88);
     color: white;
     font-weight: bold;
+    background:rgb(11, 38, 158);
+
 
 }
 
@@ -244,13 +317,22 @@ i:hover{
     transform: scale(1.2);
 }
 .icon i{
-    font-size: 25px;
+    /* font-size: 25px;
     margin: 5px;
     padding: 10px;
     border-radius: 50%;
     background: rgb(65, 5, 88);
     color: #4facfe;
-    transition: 0.3s;
+    transition: 0.3s; */
+
+     font-size: 25px;
+     padding: 10px;
+     border-radius: 50%;
+     width: 45px;
+     height: 45px;
+     justify-content: center;
+     align-items: center;
+     transition: 0.3s;
 }
 
 .icon i:hover{
@@ -282,7 +364,11 @@ i:hover{
            font-size: 35px;
            padding: 10px;
            border-radius: 50%;
-           background: rgb(65, 5, 88);
+           width: 60px;
+           height: 60px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
            transition: 0.5s;
         
 }
@@ -303,15 +389,22 @@ i:hover{
 }
 .icon_contact a:nth-child(2) i{
     color: #25d366;
+    background-color: white;
 }
 .icon_contact a:nth-child(1) i{
-    color: #1877f2
+    color: #1877f2;
+    background-color: white;
+}
+
+.contact1 p{
+    color: white;
 }
 
 .icon_contact a:nth-child(3) i{
-    color: #ea4335
+    color: #ea4335;
+    background: white;
 }.contact1 b{
-    color: red;
+    color: rgb(8, 5, 5);
 }
 .service1{
     text-align: center;
@@ -347,6 +440,46 @@ i:hover{
 }
 
 
+/* #moi_img img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+#moi_img{
+    margin: 40px;
+} */
+ /* les icon */
+.header1 p i{
+    font-size: 40px;
+    gap: 20px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+ .fa-html5{
+    color: #e34c26;
+ }
+ .fa-css3-alt{
+    color: #264de4;
+ }
+ .fa-js{
+    color: #f0db4f;
+ }
+.fa-python{
+    color: #3776ab;
+}
+.fa-database{
+    color: #22c55e;
+}
+.separateur{
+    width: 80%;
+    margin: 50px auto;
+    height: 2px;
+    background: #1032ca;
+}
+.header1 .video{
+    color: white;
+}
 
 
 @media(max-width:768px){
@@ -370,6 +503,7 @@ i:hover{
     .menu a{
         font-size: 14px;
         padding: 5px;
+        
     }
     .service{
         flex-direction: column;
@@ -384,6 +518,14 @@ i:hover{
     .logo h1{
         font-size: 18px;
 
+    }
+    .sec1{
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+    }
+    .qui{
+        max-width: 100%;
     }
 
 } 
